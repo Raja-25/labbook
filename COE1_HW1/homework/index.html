@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          <img src="logo.png" alt="Logo" id="home-ex">
+          <h1><b>HTML Elements</b></h1>
+          <hr>
+
+          <nav>
+            <b>
+              <a href="#home-ex"><u>Home</u></a>
+              &nbsp;
+              <a href="#head-ex"><u>Headers</u></a>
+              &nbsp;
+              <a href="#table-ex"><u>Table</u></a>
+              &nbsp;
+              <a href="#list-ex"><u>List</u></a>
+              &nbsp;
+              <a href="#text-ex"><u>Textformats</u></a>
+              &nbsp;
+              <a href="#block-ex"><u>Blockquotes</u></a>
+              &nbsp;
+            </b>
+          </nav>
+
+          <hr>
+          <p>Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2, because
+            we have to use only one h1 on the page, and it is commonly used inside header</p>
+          <h2 id="head-ex">Header2</h2>
+          <h3>Header3</h3>
+          <h4>Header4</h4>
+          <h5>Header5</h5>
+          <h6>Header6</h6>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, <a href="">test link</a> adipiscing elit. <strong>This is strong.</strong>
+            Nullam dignissim convallis est. Quisque aliquam. <em>This is emphasized.</em>
+            Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem.
+            Aliquam libero nisi,
+            imperdiet at, tincidunt nec, gravida vehicula, nisl. <i>The New York Times</i> (That's a
+            citation).<u>Underline</u>.
+            Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
+            consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. </p>
+          <p>
+            <abbr title="Hyper Text Markup Language"> HTML</abbr> and <abbr title="Hyper Text Markup Language">
+              CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in,
+            nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat
+            justo, eu volutpat enim diam eget metus. To copy a file type <code>COPY</code> <i>filename</i>. <s>Dinner`s
+              at 5:00.</s>
+            <mark>Let's make
+              that 7.</mark> This <s>text</s> has been struck.
+          </p>
+          <hr>
+          <h2 id="table-ex">Table</h2>
+          <table>
+            <tr>
+              <th>Header</th>
+              <th>Header</th>
+              <th>Header</th>
+            </tr>
+            <tr>
+              <td>Lviv</td>
+              <td>Kyiv</td>
+              <td>Kharkiv</td>
+            </tr>
+            <tr>
+              <td>Odessa</td>
+              <td>Zhytomyr</td>
+              <td>Dnipro</td>
+            </tr>
+            <tr>
+              <td>Sumy</td>
+              <td>Chernivtsi</td>
+              <td>Lutsk</td>
+            </tr>
+          </table>
+          <h2 id="list-ex">Unordered List</h2>
+          <ul>
+            <li>
+              List item 1
+            </li>
+            <li>
+              List item 2
+              <ul>
+                <li>Some nested list item 1</li>
+              </ul>
+            </li>
+            <li>
+              List item 3
+            </li>
+          </ul>
+
+
+          <h2>Ordered List</h2>
+          <ol>
+            <li>
+              List item 1
+            </li>
+            <li>
+              List item 2
+              <ol>
+                <li>Some nested list item 1</li>
+              </ol>
+            </li>
+            <li>
+              List item 3
+            </li>
+          </ol>
+
+          <h3>Definition List</h3>
+          <dl>
+            <dt>defines terms 1</dt>
+            <dd>description 1</dd>
+          </dl>
+          <dl>
+            <dt>defines terms 2</dt>
+            <dd>description 2</dd>
+          </dl>
+          Details <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+          </select>
+          <hr>
+          <h2 id="text-ex">Text formats</h2>
+          <p>Article Text</p>
+          <article>
+            <h2>Article title</h2>
+            <p>Article description</p>
+          </article>
+          <h3>Preformatted Text</h3>
+          <pre>
+Text
+  in a pre element
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
+          </pre>
+          <h3>Code</h3>
+          <pre>
+.wrapper {
+   display: flex;
+    vertical-align: middle;
+    justify-content: center;
+  }
+          </pre>
+
+          <h2 id="block-ex">
+            Blockquotes
+          </h2>
+          <p>Let's keep it simple. Italics are good to help set it off from the body text. Be sure to style the
+            citation.</p>
+          <blockquote>
+            "If you go back a few hundred years, what we take for granted today would seem like magic-being able to talk
+            to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle.
+            These are all things that would have been considered magic a few hundred years ago."
+            <br>
+            <a href="#">Elon Musk</a>
+          </blockquote>
+          <hr>
+          <form>
+            First name: <input type="text">
+            <br>
+            Surname: <input type="text">
+            <br>
+            Email: <input type="text">
+            <br>
+            <textarea rows="10" cols="30">
+
+          </textarea>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+          <footer>
+            &#169; Copyright Epam Systems
+          </footer>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

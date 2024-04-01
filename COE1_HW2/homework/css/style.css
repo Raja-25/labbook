@@ -1,0 +1,121 @@
+/* 
+
+write your code here
+
+*/
+
+@import "style-print.css" print, speech;
+@media print {
+    #home {
+        width: 75%;
+        margin-left: 13%;
+    }
+
+    .imageandmatter img {
+        width: 300px;
+        height: 110px;
+        margin-top: 100%;
+    }
+
+    .imageandmatter .tm-section-title {
+        color: blue;
+    }
+}
+
+.imageandmatter {
+    display: flex;
+}
+
+
+/* second task*/
+#about .box-bg:hover {
+    background-color: #87CEFA;
+    color: white;
+}
+
+#about .box-bg:hover h2 {
+    color: white;
+}
+
+/* THird task*/
+p::first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}
+
+/* Fourth Task*/
+.tm-content-box {
+    box-shadow: 3px 4px 8px 8px grey;
+}
+
+/* fifth task*/
+.howdo {
+    color: gainsboro !important;
+    letter-spacing: 5px;
+}
+
+/* sixth task*/
+h2+p {
+    font-style: italic;
+}
+
+/* seventh task*/
+p::first-letter {
+    margin-left: 30px !important;
+}
+
+/* eighth task*/
+.heading a:visited {
+    text-decoration: underline;
+}
+
+.heading a:hover {
+    font-weight: bold;
+}
+
+sup {
+    color: red;
+}
+
+/* ninth task*/
+.blocks li:nth-of-type(2) {
+    background-color: grey;
+}
+
+.blocks li:nth-of-type(4) {
+    background-color: grey;
+}
+
+.blocks li:nth-of-type(6) {
+    background-color: grey;
+}
+
+
+
+/* tenth task*/
+
+.submit-btn {
+    background-color: transparent;
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+    float: right;
+}
+
+.submit-btn:hover {
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+}
+
+.required::after {
+    content: '*';
+    color: red;
+display: block;
+}
+
+
+/* 11th task*/
+
+.tm-main-nav a:hover {
+    background-color: grey !important;
+}

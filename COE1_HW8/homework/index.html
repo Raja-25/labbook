@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            margin-top: 10%;
+            margin-left: 30%;
+            width: 30%;
+            text-align: center;
+            /* background-color: green; */
+            cursor: pointer;
+        }
+
+        tr,
+        td {
+            padding: 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2" id="myTable">
+        <tr>
+            <td onclick="changeColor(this, 1)">cell1</td>
+            <td onclick="changeColor(this, 2)">cell2</td>
+            <td onclick="changeColor(this, 1)">cell3</td>
+        </tr>
+        <tr>
+            <td onclick="changeColor(this, 1)">cell4</td>
+            <td onclick="changeColor(this, 1)">cell5</td>
+            <td onclick="changeColor(this, 3)">special cell</td>
+        </tr>
+        <tr>
+            <td onclick="changeColor(this, 1)">cell7</td>
+            <td onclick="changeColor(this, 1)">cell8</td>
+            <td onclick="changeColor(this, 1)">cell9</td>
+        </tr>
+    </table>
+    <script>
+        function changeColor(cell, bool) {
+            const table = document.getElementById('myTable');
+            let cell2 = table.rows[0].cells[1];
+            let cell5 = table.rows[1].cells[1];
+            let cell8 = table.rows[2].cells[1];
+            if (bool === 1) {
+                cell.style.backgroundColor = "yellow";
+            }
+            if (bool === 2) {
+                if (cell5.style.backgroundColor === '') {
+                    cell5.style.backgroundColor = 'blue';
+                }
+                if (cell8.style.backgroundColor === '') {
+                    cell8.style.backgroundColor = 'blue';
+                }
+                cell.style.backgroundColor = 'blue';
+            }
+            if (bool === 3) {
+                for (let i = 0; i < table.rows.length; i++) {
+                    for (let j = 0; j < table.rows[i].cells.length; j++) {
+                        const currentCell = table.rows[i].cells[j];
+                        if (currentCell.style.backgroundColor === "") {
+                            currentCell.style.backgroundColor = "red";
+                        }
+
+                    }
+                }
+                cell.style.backgroundColor = "red";
+
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
